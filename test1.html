@@ -490,11 +490,8 @@
 					<h2> 1 - Problems</h2>
 					<ol>
 						<li>
-							<p style="text-align: justify;">Given a pair of stereo images, stereo algorithms try to resolve the so called "correspondence problem".
-								This problem is not always easy: uniform areas such as the wall shown in the figure make the problem ambiguous.
-								Furthermore, given learning nature of stereo networks, they suffer when dealing with unseen scenarios.
-								This latter problem is also called domain shift.</p>
-							<table align=center width="1000px" style="font-family: 'Noto Sans', sans-serif; font-size: 1.1em ">
+							<p style="text-align: justify;">Shortening of large videos as in the case of surveillance systems imposes a heavy time complexity on processing the entire length of the video, while during the shortening process itself.</p>
+							<!-- <table align=center width="1000px" style="font-family: 'Noto Sans', sans-serif; font-size: 1.1em ">
 								<tr>
 									<td><img src="assets/vanilla_midd21.png" width="495px" /></td>
 									<td><img src="assets/vanilla_midd21_cfnet.png" width="495px" /></td>
@@ -508,15 +505,13 @@
 										</p>
 									</td>
 								</tr>
-							</table>
+							</table> -->
 						</li>
 						<li>
 							<p style="text-align: justify;">
-								Active stereo deal with ambiguous regions using a physical pattern projector which aims to ease correspondences.
-								However, a pattern projector is not feasible in outdoor scenarios where ambient light cancel out the projected pattern.
-								Furthermore, active light decreases proportionally to the square of the distance: consequentially active stereo cannot deal with long distances.
+								Cropping the frames of the video so that the concerned objects are focussed and choosing a global frame aspect ratio with respect to the entire video, so as to produce a high detailed video and also facilitate easier processing of details from the same.
 							</p>
-							<center>
+							<!-- <center>
 								<img src="assets/active_pattern.gif" width="1000px" />
 							</center>
 							<table align=center width="1000px" style="font-family: 'Noto Sans', sans-serif; font-size: 1.1em ">
@@ -527,8 +522,10 @@
 										</p>
 									</td>
 								</tr>
-							</table>
+							</table> -->
 						</li>
+						<li><p style="text-align: justify;">Detecting a single object from a frame, where other objects similar to the former are also present and if a group of objects are required, then drawing bounding boxes altogether around the concerned objects is a complexity worth to be noted, here.</p></li>
+						<li><p style="text-align: justify;">Employing the use of efficient object tracking algorithms so as to skip unnecessary frames with absolutely null or little change and thereby reduce the video processing complexity and also analysing the cases where this technique can be applied for better results.</p></li>
 					</ol>
 				</td>
 			</tr>
